@@ -1,0 +1,17 @@
+* {
+  font-family: Inter;
+  margin: 0;
+}
+.hero-background {
+  background-image: url(./img/Div\ [hero-background].png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+.hero-gradient {
+  background-image: url(./img/Div\ [hero-gradient].png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  width: 100%;
+}
