@@ -42,9 +42,6 @@ h1 {
   height: 446px;
   background-repeat: no-repeat;
 }
-.content {
-  /* background-color: aliceblue; */
-}
 .author {
   display: flex;
   color: white;
