@@ -49,7 +49,14 @@ h1 {
   background-image: url(./img/Div\ [cover].png);
   width: 446px;
   height: 446px;
+  border: 20px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: all 1s ease;
+}
+.uk-overlay:hover {
+  background-size: 110%;
 }
 .author {
   display: flex;
@@ -197,10 +204,17 @@ h1 {
   width: 244px;
   height: 360px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.uk-overlay-panel:hover {
+  width: 294px;
+  height: 410px;
 }
 .png-1 {
   background-image: url(./img/Div\ 1\ [cover].png);
@@ -287,6 +301,10 @@ h1 {
 .article1 {
   /* display: flex; */
   margin-bottom: 47px;
+  transition: all 0.5s ease;
+}
+.article1:hover {
+  scale: 1.1;
 }
 .article1-head {
   color: rgba(0, 120, 246, 1);
@@ -298,6 +316,9 @@ h1 {
   font-size: 12.4px;
   line-height: 22px;
   font-weight: 700;
+}
+.content {
+  width: 608.6px;
 }
 .content-thisweek {
   width: 739px;
