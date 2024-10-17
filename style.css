@@ -4,6 +4,9 @@
   font-family: Inter;
   box-sizing: border-box;
 }
+body {
+  background-color: rgba(250, 250, 250, 1);
+}
 .hero {
   height: 630.4px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0)),
@@ -52,9 +55,14 @@ h1 {
   display: flex;
   color: white;
   /* background-color: blue; */
-  width: 608.6px;
+  width: 739px;
   height: 44px;
   align-items: center;
+  gap: 5px;
+}
+.author-thisweek-right {
+  color: black;
+  justify-content: right;
 }
 .author-link {
   width: 44px;
@@ -62,9 +70,13 @@ h1 {
   background-size: 100%;
 }
 .author-name {
+  color: black;
   font-size: 12px;
   opacity: 70%;
   font-weight: 700;
+}
+.author-name-right {
+  text-align: right;
 }
 .uk-navbar {
   display: flex;
@@ -247,8 +259,104 @@ h1 {
   line-height: 20px;
   font-weight: 500;
   /* margin-top: -5px */
-  width: auto;
+  /* width: auto; */
   height: 23px;
   border-radius: 20px;
   text-transform: uppercase;
+}
+.category-how-i-work {
+  width: 167px;
+}
+.category-meduushtei {
+  width: 87px;
+}
+.category-techworm {
+  width: 80px;
+}
+.article-container {
+  min-width: 1186px;
+  height: 1588px;
+}
+.thisweek {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1116px;
+  height: 1400px;
+  flex-wrap: wrap;
+}
+.article1 {
+  /* display: flex; */
+  margin-bottom: 47px;
+}
+.article1-head {
+  color: rgba(0, 120, 246, 1);
+  display: flex;
+  position: absolute;
+  top: 27px;
+  left: 27px;
+  gap: 12px;
+  font-size: 12.4px;
+  line-height: 22px;
+  font-weight: 700;
+}
+.content-thisweek {
+  width: 739px;
+  height: 183px;
+  position: relative;
+  border-radius: 0 27px 27px 27px;
+  background-color: white;
+}
+.thisweek-date {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: gray;
+}
+.article1-head span {
+  color: rgba(0, 120, 246, 1);
+  font-weight: 700;
+}
+.article1-content {
+  font-family: Inter;
+  font-size: 21.1px;
+  font-weight: 700;
+  line-height: 26px;
+  position: absolute;
+  width: 450px;
+  top: 50px;
+  left: 45px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: left;
+}
+.article1-content-png {
+  background-size: 100%;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: 28px;
+  right: 65px;
+}
+.thisweek-png1 {
+  background-image: url(./img/article1-content\ [cover].png);
+}
+.thisweek-png2 {
+  background-image: url(./img/article\ 2[cover].png);
+}
+.thisweek-png3 {
+  background-image: url(./img/article\ 3\ [cover].png);
+}
+.thisweek-png4 {
+  background-image: url(./img/article\ 4\ [cover].png);
+}
+.thisweek-png5 {
+  background-image: url(./img/article\ 5\ [cover].png);
+}
+.article-left {
+  justify-self: flex-start;
+}
+.article-right {
+  justify-self: flex-end;
+}
+.right {
+  align-content: right;
 }
