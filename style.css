@@ -304,7 +304,7 @@ h1 {
   transition: all 0.5s ease;
 }
 .article1:hover {
-  scale: 1.1;
+  scale: 1.01;
 }
 .article1-head {
   color: rgba(0, 120, 246, 1);
@@ -382,6 +382,9 @@ h1 {
 .right {
   align-content: right;
 }
+.prev-week-main {
+  border-bottom: 36px;
+}
 .prev-week {
   width: 1116px;
   height: 1400.78px;
@@ -415,4 +418,182 @@ h1 {
 .uk-active {
   width: 1135px;
   height: 1302.79px;
+}
+.deeznuts {
+  height: 82px;
+  top: 4057.53px;
+  gap: 0px;
+  border-radius: 0px 0px 36px 36px;
+  background-color: rgba(250, 250, 250, 1);
+}
+footer {
+  height: 750px;
+  background-color: rgba(0, 0, 0, 1);
+  /* display: flex;
+  justify-content: center; */
+}
+.uk-container {
+  max-width: 1186px;
+  height: 545px;
+  background-color: whitesmoke;
+}
+.uk-grid-content {
+  /* width: 1135px; */
+  /* height: 633.9px; */
+  display: grid;
+  /* grid-template-columns: repeat(12);
+  grid-template-rows: repeat(9); */
+  /* gap: 19px; */
+  margin-bottom: 54px;
+}
+.read {
+  background-color: rgba(115, 87, 74, 1);
+  width: 62.54px;
+  position: absolute;
+  height: 28px;
+  text-align: center;
+  align-content: center;
+  border-radius: 7px;
+  right: 17px;
+  bottom: 93px;
+  color: white;
+  font-size: 11.8px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.15000000596046448px;
+}
+.grid-content {
+  padding: 10px 20px 0 20px;
+  text-decoration: none;
+  color: white;
+  width: auto;
+  height: 107px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+h4 {
+  width: auto;
+}
+h6 {
+  font-size: 11.6px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.30000001192092896px;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 1);
+}
+.grid-1 {
+  background-image: url(./img/big\ grid\ [uk-cover-background].png);
+  width: 548.5px;
+  height: 361.47px;
+  grid-column: 1 / 7;
+  position: relative;
+}
+.grid-2 {
+  background-image: url(./img/2\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 271.93px;
+  grid-column: 7 / 10;
+  position: relative;
+}
+.grid-3 {
+  background-image: url(./img/3\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 271.93px;
+  grid-column: 10 / 13;
+  position: relative;
+}
+.grid-4 {
+  background-image: url(./img/4\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 234.24px;
+  grid-row: 7 / 10;
+  grid-column: 1 / 4;
+  position: relative;
+}
+.grid-5 {
+  background-image: url(./img/5\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 234.24px;
+  grid-row: 7 / 10;
+  grid-column: 4 / 10;
+  position: relative;
+}
+.grid-6 {
+  background-image: url(./img/6\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 323.97px;
+  grid-row: 5 / 10;
+  grid-column: 7 / 10;
+  position: relative;
+}
+.grid-7 {
+  background-image: url(./img/7\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 323.97px;
+  grid-row: 5 / 10;
+  grid-column: 10 / 13;
+  position: relative;
+}
+.grid-2-1 {
+  background-image: url(./img/2-1[uk-cover-background].png);
+  width: 548.5px;
+  height: 361.47px;
+  grid-column: 1 / 7;
+  position: relative;
+}
+.grid-2-2 {
+  background-image: url(./img/2-2\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 271.93px;
+  grid-column: 7 / 10;
+  position: relative;
+}
+.grid-2-3 {
+  background-image: url(./img/2-3\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 271.93px;
+  grid-column: 10 / 13;
+  position: relative;
+}
+.grid-2-4 {
+  background-image: url(./img/2-4\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 234.24px;
+  grid-row: 7 / 10;
+  grid-column: 1 / 4;
+  position: relative;
+}
+.grid-2-5 {
+  background-image: url(./img/2-5\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 234.24px;
+  grid-row: 7 / 10;
+  grid-column: 4 / 10;
+  position: relative;
+}
+.grid-2-6 {
+  background-image: url(./img/2-6\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 323.97px;
+  grid-row: 5 / 10;
+  grid-column: 7 / 10;
+  position: relative;
+}
+.grid-2-7 {
+  background-image: url(./img/2-7\ [uk-cover-background].png);
+  width: 264.75px;
+  height: 323.97px;
+  grid-row: 5 / 10;
+  grid-column: 10 / 13;
+  position: relative;
+}
+.grids-all {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 18px;
 }
