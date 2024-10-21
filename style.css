@@ -17,6 +17,7 @@ body {
   height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0)),
     url(https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/1451f11e03da76480966b636a622119a.jpg);
+  background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
   justify-content: center;
@@ -319,13 +320,15 @@ h1 {
   height: 1400px;
   flex-wrap: wrap;
 }
+
 .article1 {
   /* display: flex; */
   margin-bottom: 47px;
   transition: all 0.5s ease;
 }
 .article1:hover {
-  scale: 1.01;
+  transform: translatey(-2px);
+  backdrop-filter: blur(8px);
 }
 .article1-head {
   color: rgba(0, 120, 246, 1);
@@ -347,6 +350,10 @@ h1 {
   position: relative;
   border-radius: 0 27px 27px 27px;
   background-color: white;
+  backdrop-filter: blur(8px);
+}
+.content-thisweek:hover {
+  backdrop-filter: blur(8px);
 }
 .thisweek-date {
   font-size: 12px;
@@ -627,7 +634,7 @@ h6 {
   height: 545px;
   /* background-color: whitesmoke; */
   display: flex;
-  justify-content: center;
+  margin: auto;
   align-items: center;
   gap: 50px;
 }
