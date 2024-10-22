@@ -13,71 +13,63 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_left"
-    />
-    <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_forward"
     />
   </head>
   <body>
     <main>
-      <section class="hero">
-        <nav class="uk-navbar">
-          <div style="display: flex; align-content: center">
-            <div style="display: flex; gap: 35px; align-items: center">
-              <div class="burger-menu">
-                <img src="./img/Div [burgermenu].png" alt="" />
-              </div>
-              <div class="uk-navbar-content">
-                <a href="#">
-                  <img
-                    class="uk-navbar-band"
-                    src="./img/Link [uk-navbar-band].png"
-                    alt=""
-                  />
-                </a>
-                <img src="./img/Span.png" alt="" />
-              </div>
-              <input
-                style="background: transparent; border: none; outline: none"
-                placeholder="Хайлт хийх"
-                class="gray-texts"
-              />
+      <nav class="uk-navbar">
+        <div style="display: flex; align-content: center">
+          <div style="display: flex; gap: 35px; align-items: center">
+            <div class="burger-menu">
+              <img src="./img/Div [burgermenu].png" alt="" />
             </div>
-          </div>
-          <div class="uk-navbar-content-main">
-            <div class="uk-navbar-content-2">
-              <div style="display: flex; align-items: center; gap: 5px">
-                <span class="gray-texts">Дараагийн нийтлэл:</span>
-                <div class="techworm-text">techworm</div>
-              </div>
-              <a href="#" class="chip">
-                <div class="coming-soon">
-                  Маргааш орно<span class="blue-dot">.</span>
-                </div>
+            <div class="uk-navbar-content">
+              <a href="#">
+                <img
+                  class="uk-navbar-band"
+                  src="./img/Link [uk-navbar-band].png"
+                  alt=""
+                />
               </a>
+              <img src="./img/Span.png" alt="" />
             </div>
-            <div class="social-links-main">
-              <a href="#" class="social-links"
-                ><img src="./img/facebook [social-link].png" alt=""
-              /></a>
-              <a href="#" class="social-links"
-                ><img src="./img/instagram [social-link].png" alt=""
-              /></a>
-              <a href="#" class="social-links"
-                ><img src="./img/twitter [social-link].png" alt=""
-              /></a>
-              <a href="#" class="social-links"
-                ><img src="./img/linkd [social-link].png" alt=""
-              /></a>
-            </div>
+            <input
+              style="background: transparent; border: none; outline: none"
+              placeholder="Хайлт хийх"
+              class="gray-texts"
+            />
           </div>
-        </nav>
+        </div>
+        <div class="uk-navbar-content-main">
+          <div class="uk-navbar-content-2">
+            <div style="display: flex; align-items: center; gap: 5px">
+              <span class="gray-texts">Дараагийн нийтлэл:</span>
+              <div class="techworm-text">techworm</div>
+            </div>
+            <a href="#" class="chip">
+              <div class="coming-soon">
+                Маргааш орно<span class="blue-dot">.</span>
+              </div>
+            </a>
+          </div>
+          <div class="social-links-main">
+            <a href="#" class="social-links"
+              ><img src="./img/facebook [social-link].png" alt=""
+            /></a>
+            <a href="#" class="social-links"
+              ><img src="./img/instagram [social-link].png" alt=""
+            /></a>
+            <a href="#" class="social-links"
+              ><img src="./img/twitter [social-link].png" alt=""
+            /></a>
+            <a href="#" class="social-links"
+              ><img src="./img/linkd [social-link].png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
         <div class="uk-grid-main">
           <div class="uk-grid">
             <div class="uk-overlay"></div>
@@ -87,7 +79,7 @@
               <h1 class="title-1">
                 Сониноос сорчилъё: Тоо юу? Сүлд үү? /2024.10.14/
               </h1>
-              <a class="author">
+              <div class="author">
                 <div href="#" class="author-link">
                   <img src="./img/Image [author-photo].png" alt="" />
                 </div>
@@ -99,7 +91,7 @@
                     10 сарын 14, 2024
                   </p>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -217,13 +209,13 @@
 
     <div class="thisweek">
       <!-- article 1 -->
-      <div class="article1 article-left">
-        <a class="author author-thisweek">
-          <div href="#" class="author-link">
+      <article class="article1 article-left">
+        <div class="author author-thisweek">
+          <a href="#" class="author-link">
             <img src="./img/author photo 2 [author-photo].png" alt="" />
-          </div>
+          </a>
           <div>
-            <div class="author-name author-name-thisweek">Purevdorj</div>
+            <a href="#" class="author-name author-name-thisweek">Purevdorj</a>
             <p
               style="
                 font-size: 12px;
@@ -235,7 +227,7 @@
               10 сарын 14, 2024 &middot; 4 min ago
             </p>
           </div>
-        </a>
+        </div>
         <div class="content-thisweek">
           <div class="article1-head">
             <div>&middot;</div>
@@ -244,18 +236,21 @@
           <a href="#" class="article1-content">10 тоонд: Нобелийн шагнал</a>
           <a href="#" class="article1-content-png thisweek-png1"></a>
         </div>
-      </div>
+      </article>
       <!-- article 2 -->
-      <div class="article1 article-right">
-        <a class="author author-thisweek-right">
+      <article class="article1 article-right">
+        <div class="author author-thisweek-right">
           <div>
-            <div class="author-name author-name-thisweek author-name-right">
+            <a
+              href="#"
+              class="author-name author-name-thisweek author-name-right"
+            >
               Gerelchimeg Jargalsaikhan
-            </div>
+            </a>
             <p class="thisweek-date">10 сарын 14, 2024 &middot; 10 min ago</p>
           </div>
           <img src="./img/3 [author-photo].png" alt="" />
-        </a>
+        </div>
         <div class="content-thisweek">
           <div class="article1-head">
             <div>&middot;</div>
@@ -266,17 +261,17 @@
           </a>
           <a href="#" class="article1-content-png thisweek-png2"></a>
         </div>
-      </div>
+      </article>
       <!-- article 3 -->
-      <div class="article1 article-left">
-        <a class="author author-thisweek">
-          <div href="#" class="author-link">
+      <article class="article1 article-left">
+        <div class="author author-thisweek">
+          <a href="#" class="author-link">
             <img src="./img/4 [author-photo].png" alt="" />
-          </div>
+          </a>
           <div>
-            <div class="author-name author-name-thisweek">
+            <a href="" class="author-name author-name-thisweek">
               Undral Amarsaikhan
-            </div>
+            </a>
             <p
               style="
                 font-size: 12px;
@@ -288,7 +283,7 @@
               10 сарын 14, 2024 &middot; 3 min ago
             </p>
           </div>
-        </a>
+        </div>
         <div class="content-thisweek">
           <div class="article1-head">
             <div>&middot;</div>
@@ -299,10 +294,10 @@
           </a>
           <a href="#" class="article1-content-png thisweek-png3"></a>
         </div>
-      </div>
+      </article>
       <!-- article 4 -->
-      <div class="article1 article-right">
-        <a class="author author-thisweek-right">
+      <article class="article1 article-right">
+        <a href="#" class="author author-thisweek-right">
           <div>
             <div class="author-name author-name-thisweek author-name-right">
               Tushigt-Erdene
@@ -323,17 +318,17 @@
           </a>
           <a href="#" class="article1-content-png thisweek-png4"></a>
         </div>
-      </div>
+      </article>
       <!-- article 5 -->
-      <div class="article1 article-left">
-        <a class="author author-thisweek">
-          <div href="#" class="author-link">
+      <article class="article1 article-left">
+        <div class="author author-thisweek">
+          <a href="#" class="author-link">
             <img src="./img/3 [author-photo].png" alt="" />
-          </div>
+          </a>
           <div>
-            <div class="author-name author-name-thisweek">
+            <a href="#" class="author-name author-name-thisweek">
               Gerelchimeg Jargalsaikhan
-            </div>
+            </a>
             <p
               style="
                 font-size: 12px;
@@ -345,7 +340,7 @@
               10 сарын 14, 2024 &middot; 6 min ago
             </p>
           </div>
-        </a>
+        </div>
         <div class="content-thisweek">
           <div class="article1-head">
             <div>&middot;</div>
@@ -356,7 +351,7 @@
           </a>
           <a href="#" class="article1-content-png thisweek-png5"></a>
         </div>
-      </div>
+      </article>
     </div>
 
     <div class="prev-week-main">
