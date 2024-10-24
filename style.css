@@ -72,7 +72,7 @@ h1 {
 .author {
   display: flex;
   color: white;
-  width: 739px;
+  width: 100%;
   height: 44px;
   align-items: center;
   gap: 5px;
@@ -97,6 +97,7 @@ h1 {
 }
 .author-name-right {
   text-align: right;
+  justify-self: right;
 }
 .uk-navbar {
   display: flex;
@@ -152,11 +153,13 @@ h1 {
   margin-bottom: auto;
 }
 .blue-dot {
-  font-size: 17.9px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 10px;
+  animation: blink 2s infinite;
   color: rgba(0, 120, 246, 1);
 }
+
 .social-links-main {
   display: flex;
   gap: 5px;
@@ -226,7 +229,7 @@ h1 {
   gap: 28px;
   margin-top: 37px;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
   flex-wrap: nowrap;
 }
 .uk-overlay-panel {
@@ -244,7 +247,7 @@ h1 {
 }
 .uk-overlay-panel:hover {
   background-size: 110%;
-  scale: 1.01;
+  /* scale: 1.01; */
 }
 .png-1 {
   background-image: url(./img/Div\ 1\ [cover].png);
@@ -320,10 +323,10 @@ h1 {
   display: grid;
   width: 1116px;
   height: 1400px;
-  flex-wrap: wrap;
 }
 
 .article1 {
+  width: 66.25%;
   margin-bottom: 47px;
   transition: all 0.5s ease;
 }
@@ -345,15 +348,18 @@ h1 {
   width: 608.6px;
 }
 .content-thisweek {
-  width: 739px;
+  max-width: 100%;
   height: 183px;
   position: relative;
   border-radius: 0 27px 27px 27px;
   background-color: white;
   transition: all 0.5s ease;
 }
+.content-thisweek#right {
+  border-radius: 27px 0 27px 27px;
+}
 .content-thisweek:hover {
-  box-shadow: 10px 1px 10px gray;
+  box-shadow: 0px 0px 15px gray;
 }
 .thisweek-date {
   font-size: 12px;
@@ -372,7 +378,7 @@ h1 {
   position: absolute;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
-  width: 450px;
+  width: 55%;
   top: 50px;
   left: 45px;
   letter-spacing: 0.15000000596046448px;
@@ -406,6 +412,8 @@ h1 {
 }
 .article-right {
   justify-self: flex-end;
+  /* border-top-right-radius: ; */
+  border-radius: 27px 0px 27px 27px;
 }
 .right {
   align-content: right;
@@ -415,7 +423,7 @@ h1 {
 }
 .prev-week {
   width: 1116px;
-  height: 1400.78px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -446,7 +454,7 @@ h1 {
 .uk-active {
   margin-top: 50px;
   width: 70.9375rem;
-  height: 81.424375rem;
+  height: auto;
 }
 .deeznuts {
   height: 82px;
@@ -456,14 +464,15 @@ h1 {
   background-color: rgba(250, 250, 250, 1);
 }
 footer {
-  height: auto;
+  height: 750px;
   background-color: rgba(0, 0, 0, 1);
   justify-items: center;
 }
 .uk-grid-content {
   display: grid;
   margin-bottom: 54px;
-  width: 768px;
+  /* width: 768px; */
+  gap: 15px;
 }
 .read {
   backdrop-filter: blur(50px);
@@ -622,7 +631,9 @@ h6 {
 }
 .grids-all:hover {
   margin-top: -2px;
-  box-shadow: 5px 5px 25px gray;
+  /* box-shadow: 5px 5px 25px gray; */
+  /* -webkit-box-shadow: 0 0 15px gray; */
+  box-shadow: 0 0 15px gray;
 }
 .uk-container {
   max-width: 1186px;
@@ -764,15 +775,19 @@ h6 {
   width: auto;
   height: auto;
 }
+.uk-width-medium-1-3 > span {
+  font-size: 0.625rem;
+}
 .uk-width-medium-1-3 > a {
   font-size: 0.725rem;
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0.15000000596046448px;
   color: rgba(135, 135, 135, 1);
+  transition: all 0.2s ease;
 }
 .uk-width-medium-1-3 > a:hover {
-  margin-right: -1.25rem;
+  margin-left: 5px;
   color: white;
 }
 .uk-width-medium-1-3 > p {
@@ -793,7 +808,7 @@ h6 {
 .uk-grid-2 {
   display: flex;
   justify-content: space-between;
-  gap: 6.25rem;
+  gap: 4.5rem;
 }
 .footer-socials {
   width: 9.80125rem;
@@ -823,6 +838,9 @@ h6 {
 .footer-socials#soundcloud {
   background-image: url(./img/soundcloud-footer.png);
 }
+/* .footer-socials#soundcloud:hover {
+  fill: #f50;
+} */
 @media only screen and (max-width: 1430px) {
   :root {
     font-size: 14px;
@@ -842,6 +860,15 @@ h6 {
   }
   .slider-container {
     margin-top: -220px;
+  }
+  .footer-socials#soundcloud {
+    display: none;
+  }
+  .footer-socials#linkidn {
+    display: none;
+  }
+  .article1 {
+    width: 100vw;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -879,7 +906,7 @@ h6 {
     overflow: auto;
   }
   .article1 {
-    width: 768px;
+    width: 66.25%;
   }
   .article-right {
     justify-self: flex-start;
@@ -889,13 +916,17 @@ h6 {
   }
   .uk-active {
     height: auto;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
   .uk-grid-content {
     display: grid;
+    width: 768px;
     /* margin-left: auto;
     margin-right: auto; */
     /* gap: 30px; */
+  }
+  .thisweek {
+    width: 768px;
   }
   .grids-all {
     width: 548.5px;
@@ -926,7 +957,7 @@ h6 {
     width: 100%;
   }
   .grid-1 {
-    background-image: url(./img/big\ grid\ [uk-cover-background].png);
+    /* background-image: url(./img/big\ grid\ [uk-cover-background].png);*/
     width: 710px;
     height: 402px;
     grid-column: 1 / 7;
@@ -1038,5 +1069,11 @@ h6 {
     grid-row: 10 / 15;
     grid-column: 1 / 7;
     position: relative;
+  }
+  .footer-socials#soundcloud {
+    display: none;
+  }
+  .footer-socials#linkidn {
+    display: none;
   }
 }
