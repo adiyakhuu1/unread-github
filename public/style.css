@@ -324,11 +324,13 @@ h1 {
   width: 1116px;
   height: 1400px;
 }
-
 .article1 {
   width: 66.25%;
   margin-bottom: 47px;
   transition: all 0.5s ease;
+}
+.articles-height {
+  height: 250px;
 }
 .article1:hover {
   margin-top: -5px;
