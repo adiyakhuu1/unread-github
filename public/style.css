@@ -657,30 +657,53 @@ h6 {
 .btn-black {
   position: relative;
   align-content: center;
-  transition: all 1s ease;
+  transition: all 0.4s ease;
 }
-.arrow {
-  background-image: url(./img/btn-black.png);
-  width: 54px;
-  height: 54px;
+.arrow-main {
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   position: absolute;
   top: 18px;
+  justify-items: center;
   align-content: center;
-  text-align: center;
   right: 18px;
   bottom: 18px;
+  transition: all 0.4s ease;
+}
+.arrow {
+  /* background-image: url(./img/btn-black.png); */
+  background-color: black;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  /* position: absolute;
+  top: 18px; */
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  /* right: 18px;
+  bottom: 18px; */
   transition: all 1s ease;
 }
+.btn-black:hover .arrow-main {
+  /* background-image: none; */
+  background-color: rgb(51, 153, 255, 0.4);
+  /* opacity: 0.4; */
+}
 .btn-black:hover .arrow {
-  background-image: none;
+  /* background-image: none; */
   background-color: #3399ff;
 }
+
 .btn-black:hover {
   margin-left: 10px;
 }
 .material-symbols-outlined {
   color: white;
+  font-size: 32px !important;
+  justify-items: center;
+  align-content: center;
 }
 .blackbtn-texts {
   padding-left: 28px;
